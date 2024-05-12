@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Sid Nikon Z5</title>
+	<meta charset="UTF-8">
+   <link rel="icon" href="../../img/header/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../../css/base.css">
+   <link rel="stylesheet" type="text/css" href="../../css/product.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="format-detection" content="telephone=no">
+</head>
+
+<body>
+	<wrapper class="wrapper">
+      <div class="free-delivery">
+         <div class="free-delivey__text">Free Delivery on all order above 150$</div>
+      </div>
+      <header class="header">
+         <div class="header__container _container">
+            <div class="header__logo">
+               <a href="#" class="header__logo-a">
+                  <img src="../../img/header/logo.svg" alt="" class="header__logo-img">
+                  <h3 class="header__logo-text">Sid</h3>
+               </a>
+            </div>
+            <nav class="header__navigation">
+               <ul class="header__navigation-ul">
+                  <li class="header__navigation-li">
+                     <div class="header__navigation-a"><div>Shop</div><img src="../../img/header/Expand.svg" alt=""></div>
+                     <ul class="navigation-ul__dropmenu">
+                        <div class="top-padding"></div>
+                        <li class="navigation-li__dropmenu">
+                           <a href="#" class="header__navigation-a navigation-a__dropmenu"><div>Shop</div></a>
+                           <a href="#" class="header__navigation-a navigation-a__dropmenu"><div>Shop</div></a>
+                           <a href="#" class="header__navigation-a navigation-a__dropmenu"><div>Shop</div></a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="header__navigation-li">
+                     <a href="#" class="header__navigation-a"><div>About us</div></a>
+                  </li>
+                  <li class="header__navigation-li">
+                     <a href="#" class="header__navigation-a"><div>Compare</div></a>
+                  </li>
+                  <li class="header__navigation-li">
+                     <a href="#" class="header__navigation-a"><div>FAQs</div></a>
+                  </li>
+                  <li class="header__navigation-li">
+                     <a href="#" class="header__navigation-a"><div>Contact</div></a>
+                  </li>
+               </ul>
+            </nav>
+            <nav class="header__options">
+               <ul class="header__options-ul">
+                  <li class="header__options-li">
+                     <input id="searchInput" class="header__options-input" type="text">
+                     <button onclick="search();">
+                        <img src="../../img/header/Search.svg" alt="">
+                     </button>
+                  </li>
+                  <li class="header__options-li">
+                     <button>
+                        <img src="../../img/header/User.svg" alt="">
+                     </button>
+                  </li>
+                  <li class="header__options-li">
+                     <button>
+                        <div class="user-shopping">
+                           <div class="user-shopping__text">1</div>
+                        </div>
+                        <img src="../../img/header/Cart.svg" alt="">
+                     </button>
+                  </li>
+                  <div id="ham" class="hamburger">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                  </div>
+               </ul>
+            </nav>
+            <div class="bottom-line"></div>
+         </div>
+      </header>
+      <div class="info">
+         <div class="info__container _container">
+            <div class="info__product">
+               <div class="info__product-sidebar">
+                  <div class="product-sidebar__now">
+                     <img id="activePhoto" src="img/Thumbnail1.png">
+                     <div class="sidebar-now__line line"></div>
+                  </div>
+                  <div class="product-sidebar__all">
+                     <button class="sidebar-all__item">
+                        <img src="img/Thumbnail1.png" onclick="productSlider(1);">
+                     </button>
+                     <button class="sidebar-all__item">
+                        <img src="img/Thumbnail2.png" onclick="productSlider(2);">
+                     </button>
+                     <button class="sidebar-all__item">
+                        <img src="img/Thumbnail3.png" onclick="productSlider(3);">
+                     </button>
+                     <button class="sidebar-all__item">
+                        <img src="img/Thumbnail4.png" onclick="productSlider(4);">
+                     </button>
+                  </div>
+               </div>
+               <div class="info__product-main">
+                  <button class="product__main-button">
+                     <div onclick="openSlider(1);" id="photo1" class="slider__item active">
+                        <img src="img/Thumbnail1.png" alt="">
+                     </div>
+                     <div onclick="openSlider(2);" id="photo2" class="slider__item">
+                        <img src="img/Thumbnail2.png" alt="">
+                     </div>
+                     <div onclick="openSlider(3);" id="photo3" class="slider__item">
+                        <img src="img/Thumbnail3.png" alt="">
+                     </div>
+                     <div onclick="openSlider(4);" id="photo4" class="slider__item">
+                        <img src="img/Thumbnail4.png" alt="">
+                     </div>
+                  </button>
+               </div>
+               <div class="info__product-faq">
+                  <div class="faq-item">
+                     <input class="faq-input" type="checkbox" id="faq_1"></input>
+                     <label class="faq-titel" for="faq_1">
+                        <div class="faq-title__text">Description</div>
+                        <div class="faq__title__symbols">
+                           <div class="symbol1 symbols"></div>
+                           <div class="symbol2 symbols"></div>
+                        </div>
+                     </label>
+                     <div class="faq-text">
+                        <p>Your full frame journey begins with the Z 5. Simple yet sophisticated, 
+                           compact yet powerful, the Z 5 is built to grow with you. It’s everything 
+                           you’d expect from a full frame mirrorless camera—intense detail, 
+                           expansive views, brilliant low light capabilities, 4K UHD video 
+                           and more—plus all the innovative tools you need to push the limits of your creativity.</p>
+                     </div>
+                  </div>
+                  <div class="faq-item">
+                     <input class="faq-input" type="checkbox" id="faq_2"></input>
+                     <label class="faq-titel" for="faq_2">
+                        <div class="faq-title__text">Tech Specs</div>
+                        <div class="faq__title__symbols">
+                           <div class="symbol1 symbols"></div>
+                           <div class="symbol2 symbols"></div>
+                        </div>
+                     </label>
+                     <div class="faq-text">
+                        <p>Your full frame journey begins with the Z 5. Simple yet sophisticated, 
+                           compact yet powerful, the Z 5 is built to grow with you. It’s everything 
+                           you’d expect from a full frame mirrorless camera—intense detail, 
+                           expansive views, brilliant low light capabilities, 4K UHD video 
+                           and more—plus all the innovative tools you need to push the limits of your creativity.</p>
+                     </div>
+                  </div>
+                  <div class="faq-item">
+                     <input class="faq-input" type="checkbox" id="faq_3"></input>
+                     <label class="faq-titel" for="faq_3">
+                        <div class="faq-title__text">Shipping & Warranty</div>
+                        <div class="faq__title__symbols">
+                           <div class="symbol1 symbols"></div>
+                           <div class="symbol2 symbols"></div>
+                        </div>
+                     </label>
+                     <div class="faq-text">
+                        <p>Your full frame journey begins with the Z 5. Simple yet sophisticated, 
+                           compact yet powerful, the Z 5 is built to grow with you. It’s everything 
+                           you’d expect from a full frame mirrorless camera—intense detail, 
+                           expansive views, brilliant low light capabilities, 4K UHD video 
+                           and more—plus all the innovative tools you need to push the limits of your creativity.</p>
+                     </div>
+                  </div>
+                  <div class="faq-symbol"></div>
+               </div>
+            </div>
+            <div class="info__char">
+               <div class="info__char-name">
+                  <h2 class="char-name__text">Nikon Z5</h2>
+                  <div class="char-name__raiting">
+                     <div class="char__raiting-text">
+                        4.2 (1653)
+                     </div>
+                     <div class="char__raiting-stars">
+                        <img src="../img/details/Reviews.svg">
+                        <img src="../img/details/Reviews.svg">
+                        <img src="../img/details/Reviews.svg">
+                        <img src="../img/details/Reviews.svg">
+                     </div>
+                  </div>
+               </div>
+               <div class="info__char-price">
+                  <div class="char-price__avaible">$899</div>
+                  <div class="char-price__sale">$1,099.95</div>
+               </div>
+               <div class="info__char-options">
+                  <div class="char-options__text">Options</div>
+                  <div class="char-options__buttons">
+                     <button class="option-button option-button-black">
+                        Z5 Body Only
+                     </button>
+                     <button class="option-button">
+                        24-50mm Lens Kit
+                     </button>
+                  </div>
+               </div>
+               <div class="info__char-stock">
+                  <img src="../img/details/InStock.svg">
+                  <div class="char-stock__text">
+                     Currently In Stock
+                  </div>
+               </div>
+               <nav class="info__char-characteristics">
+                  <ul id="details-characteristics" class="details-characteristics__ul">
+                     <li class="details-characteristics__li">
+                        <img src="../img/details/Chip.svg" alt="">
+                        <div>Expeed 6 Chip</div>
+                     </li>
+                     <li class="details-characteristics__li">
+                        <img src="../img/details/Lens.svg" alt="">
+                        <div>Works with 24-50mm Lens</div>
+                     </li>
+                     <li class="details-characteristics__li">
+                        <img src="../img/details/megapixels 1.svg" alt="">
+                        <div>24.3 million Effective Pixels</div>
+                     </li>
+                     <li class="details-characteristics__li">
+                        <img src="../img/details/Battery.svg" alt="">
+                        <div>EN-EL15c rechargeable Li-ion battery</div>
+                     </li>
+                     <li class="details-characteristics__li">
+                        <img src="../img/details/Chip.svg" alt="">
+                        <div>Expeed 6 Chip</div>
+                     </li>
+                     <li class="details-characteristics__li">
+                        <img src="../img/details/Lens.svg" alt="">
+                        <div>Works with 24-50mm Lens</div>
+                     </li>
+                     <li class="details-characteristics__li">
+                        <img src="../img/details/megapixels 1.svg" alt="">
+                        <div>24.3 million Effective Pixels</div>
+                     </li>
+                     <li class="details-characteristics__li">
+                        <img src="../img/details/Battery.svg" alt="">
+                        <div>EN-EL15c rechargeable Li-ion battery</div>
+                     </li>
+                  </ul>
+                  <a onclick="moreInfoFunction(event);" href="#" id="details-moreInfo" class="details-characteristics__more">View All Tech Specs</a>
+               </nav>
+               <div class="info__char-buttons">
+                  <button class="button button-green">Add To Cart</button>
+                  <button class="button">Buy It Now</button>
+               </div>
+               <div class="info__char-line line"></div>
+               <div class="info__char-usercorner">
+                  <div class="char-usercorner__item">
+                     <img src="../img/details/Help.svg">
+                     <div class="usercorner__questions-text">Got any questions? <a href="#">Contact us</a></div>
+                  </div>
+                  <div class="char-usercorner__item">
+                     <img src="../img/details/Frame.svg">
+                     <div class="usercorner__questions-text">Free Shipping over $150</div>
+                  </div>
+                  <div class="char-usercorner__item">
+                     <img src="../img/details/Frame (1).svg">
+                     <div class="usercorner__questions-text">Share</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="use_code">
+         <div class="use_code__wrapper">
+            <div class="use_code__item">USE CODE FRIDAY50 FOR 50% OFF</div>
+            <div class="use_code__item">USE CODE FRIDAY50 FOR 50% OFF</div>
+            <div class="use_code__item">USE CODE FRIDAY50 FOR 50% OFF</div>
+            <div class="use_code__item">USE CODE FRIDAY50 FOR 50% OFF</div>
+            <div class="use_code__item">USE CODE FRIDAY50 FOR 50% OFF</div>
+            <div class="use_code__item">USE CODE FRIDAY50 FOR 50% OFF</div>
+            <div class="use_code__item">USE CODE FRIDAY50 FOR 50% OFF</div>
+            <div class="use_code__item">USE CODE FRIDAY50 FOR 50% OFF</div>
+            <div class="use_code__item">USE CODE FRIDAY50 FOR 50% OFF</div>
+            <div class="use_code__item">USE CODE FRIDAY50 FOR 50% OFF</div>
+            <div class="use_code__item">USE CODE FRIDAY50 FOR 50% OFF</div>
+         </div>
+      </div>
+      <div class="included">
+         <div class="included__container _container">
+            <h2 class="included__maintext">What’s included</h2>
+            <div class="included__block">
+               <div class="included__block-item">
+                  <img src="../img/included/DSLR.svg">
+                  <div>Nikon Z5</div>
+               </div>
+               <div class="included__block-item">
+                  <img src="../img/included/Lens.svg">
+                  <div>20mm Lens</div>
+               </div>
+               <div class="included__block-item">
+                  <img src="../img/included/Charger.svg">
+                  <div>Chaging Cable</div>
+               </div>
+               <div class="included__block-item">
+                  <img src="../img/included/st.svg">
+                  <div>Adobe Stock Subscription</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="opportunities">
+         <div class="opport__container _container">
+            <div class="opport__playground">
+               <div class="opport__playground-photo"></div>
+               <div class="opport__playground-textblock">
+                  <h2 class="playground-textblock__maintext">
+                     Expand your creative playground
+                  </h2>
+                  <div class="playground-textblock__text">
+                     Your full frame journey begins with the Z 5. Simple yet sophisticated, compact yet powerful, the Z 5 is built to grow with you. It’s everything you’d expect from a full frame mirrorless camera—intense detail, expansive views, brilliant low light capabilities, 4K UHD video and more—plus all the innovative tools you need to push the limits of your creativity.
+                  </div>
+               </div>
+            </div>
+            <div class="opport__examples">
+               <div class="opport__examples-item">
+                  <img src="../img/opportunities/Chip.png">
+                  <div class="examples-item-textblock">
+                     <h3 class="examples-item__maintext">
+                        Super powered.
+                     </h3>
+                     <div class="examples-item__text">
+                        Z5 is powered by Nikon’s fast, comprehensive EXPEED 6 image processing system. It’s the secret behind the camera’s sensational photo and video quality, autofocus performance, low-light capabilities, distortion control, image clarity, color reproduction and more.
+                     </div>
+                  </div>
+               </div>
+               <div class="opport__examples-item">
+                  <img src="../img/opportunities/Stability.png">
+                  <div class="examples-item-textblock">
+                     <h3 class="examples-item__maintext">
+                        The stabilityyou crave.
+                     </h3>
+                     <div class="examples-item__text">
+                        Sharpness starts with stability, and Z 5 has one of the best in-camera image stabilization systems available. NIKKOR Z lenses activate 5-axis VR image stabilization—up to five stops* of stabilization in up to five directions
+                     </div>
+                  </div>
+               </div>
+               <div class="opport__examples-item">
+                  <img src="../img/opportunities/Sutter Speed.png">
+                  <div class="examples-item-textblock">
+                     <h3 class="examples-item__maintext">
+                        In the blink of an iris.
+                     </h3>
+                     <div class="examples-item__text">
+                        Freeze time with shutter speeds as fast as 1/8000 of a second—fast enough to capture moments invisible to the naked eye. When shooting with wide aperture settings for shallow depth-of-field and blurred backgrounds, that speed can also be used to control your shot’s brightness.
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="comments">
+         <div class="comments__container _container">
+            <h2 class="comments__maintext">
+               Don’t take our word for it
+            </h2>
+            <div class="comments__slider">
+               <div class="comments__slider-item comments__slider-item-First">
+                  <div class="comments-item__firsttext-First">
+                     Excellent
+                  </div>
+                  <div class="comments-item__stars-First">
+                     <img src="../img/comments/Star x2.svg">
+                     <img src="../img/comments/Star x2.svg">
+                     <img src="../img/comments/Star x2.svg">
+                     <img src="../img/comments/Star x2.svg">
+                     <img src="../img/comments/Star x2.svg">
+                  </div>
+                  <div class="comments-item__secondtext-First">
+                     Based on <a href="#">456 reviews</a>
+                  </div>
+                  <div class="comments-item__trust">
+                     <img src="../img/comments/Shape.svg">
+                     <div>Trustpilot</div>
+                  </div>
+               </div>
+               <div class="comments__slider-item">
+                  <div class="comments__slider-content">
+                     <div class="comments-item__starstime">
+                        <div class="comments-item__stars">
+                           <img src="../img/comments/Star x2.svg">
+                           <img src="../img/comments/Star x2.svg">
+                           <img src="../img/comments/Star x2.svg">
+                           <img src="../img/comments/Star x2.svg">
+                           <img src="../img/comments/Star x2.svg">
+                        </div>
+                        <div class="comments-item__time">
+                           2 days ago
+                        </div>
+                     </div>
+                     <div class="comments-item__maintext">
+                        Best on the market
+                     </div>
+                     <div class="comments-item__comment">
+                        I love this product because the support is great. Please Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, aspernatur?
+                     </div>
+                     <div class="comments-item__line"></div>
+                     <div class="comments-item__name">
+                        Worldtraveler
+                     </div>
+                  </div>
+               </div>
+               <div class="comments__slider-item">
+                  <div class="comments__slider-content">
+                     <div class="comments-item__starstime">
+                        <div class="comments-item__stars">
+                           <img src="../img/comments/Star x2.svg">
+                           <img src="../img/comments/Star x2.svg">
+                           <img src="../img/comments/Star x2.svg">
+                           <img src="../img/comments/Star x2.svg">
+                           <img src="../img/comments/Star x2.svg">
+                        </div>
+                        <div class="comments-item__time">
+                           2 days ago
+                        </div>
+                     </div>
+                     <div class="comments-item__maintext">
+                        Best on the market
+                     </div>
+                     <div class="comments-item__comment">
+                        I love this product because the support is great. Please Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, aspernatur?
+                     </div>
+                     <div class="comments-item__line"></div>
+                     <div class="comments-item__name">
+                        Worldtraveler
+                     </div>
+                  </div>
+               </div>
+               <div class="comments__slider-item">
+                  <div class="comments__slider-content">
+                     <div class="comments-item__starstime">
+                        <div class="comments-item__stars">
+                           <img src="../img/comments/Star x2.svg">
+                           <img src="../img/comments/Star x2.svg">
+                           <img src="../img/comments/Star x2.svg">
+                           <img src="../img/comments/Star x2.svg">
+                           <img src="../img/comments/Star x2.svg">
+                        </div>
+                        <div class="comments-item__time">
+                           2 days ago
+                        </div>
+                     </div>
+                     <div class="comments-item__maintext">
+                        Best on the market
+                     </div>
+                     <div class="comments-item__comment">
+                        I love this product because the support is great. Please Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, aspernatur?
+                     </div>
+                     <div class="comments-item__line"></div>
+                     <div class="comments-item__name">
+                        Worldtraveler
+                     </div>
+                  </div>
+               </div>
+               <div class="comments__slider-item">
+                  <div class="comments__slider-content">
+                     <div class="comments-item__starstime">
+                        <div class="comments-item__stars">
+                           <img src="../img/comments/Star x2.svg">
+                           <img src="../img/comments/Star x2.svg">
+                           <img src="../img/comments/Star x2.svg">
+                           <img src="../img/comments/Star x2.svg">
+                           <img src="../img/comments/Star x2.svg">
+                        </div>
+                        <div class="comments-item__time">
+                           2 days ago
+                        </div>
+                     </div>
+                     <div class="comments-item__maintext">
+                        Best on the market
+                     </div>
+                     <div class="comments-item__comment">
+                        I love this product because the support is great. Please Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, aspernatur?
+                     </div>
+                     <div class="comments-item__line"></div>
+                     <div class="comments-item__name">
+                        Worldtraveler
+                     </div>
+                  </div>
+               </div>
+               <div class="comments__slider-item">
+                  <div class="comments__slider-content">
+                     <div class="comments-item__starstime">
+                        <div class="comments-item__stars">
+                           <img src="../img/comments/Star x2.svg">
+                           <img src="../img/comments/Star x2.svg">
+                           <img src="../img/comments/Star x2.svg">
+                           <img src="../img/comments/Star x2.svg">
+                           <img src="../img/comments/Star x2.svg">
+                        </div>
+                        <div class="comments-item__time">
+                           2 days ago
+                        </div>
+                     </div>
+                     <div class="comments-item__maintext">
+                        Best on the market
+                     </div>
+                     <div class="comments-item__comment">
+                        I love this product because the support is great. Please Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, aspernatur?
+                     </div>
+                     <div class="comments-item__line"></div>
+                     <div class="comments-item__name">
+                        Worldtraveler
+                     </div>
+                  </div>
+               </div>
+               <div class="comments__slider-item">
+                  <div class="comments__slider-content">
+                     <div class="comments-item__starstime">
+                        <div class="comments-item__stars">
+                           <img src="../img/comments/Star x2.svg">
+                           <img src="../img/comments/Star x2.svg">
+                           <img src="../img/comments/Star x2.svg">
+                           <img src="../img/comments/Star x2.svg">
+                           <img src="../img/comments/Star x2.svg">
+                        </div>
+                        <div class="comments-item__time">
+                           2 days ago
+                        </div>
+                     </div>
+                     <div class="comments-item__maintext">
+                        Best on the market
+                     </div>
+                     <div class="comments-item__comment">
+                        I love this product because the support is great. Please Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, aspernatur?
+                     </div>
+                     <div class="comments-item__line"></div>
+                     <div class="comments-item__name">
+                        Worldtraveler
+                     </div>
+                  </div>
+               </div>
+               <div class="comments__slider-item">
+                  <div class="comments__slider-content">
+                     <div class="comments-item__starstime">
+                        <div class="comments-item__stars">
+                           <img src="../img/comments/Star x2.svg">
+                           <img src="../img/comments/Star x2.svg">
+                           <img src="../img/comments/Star x2.svg">
+                           <img src="../img/comments/Star x2.svg">
+                           <img src="../img/comments/Star x2.svg">
+                        </div>
+                        <div class="comments-item__time">
+                           2 days ago
+                        </div>
+                     </div>
+                     <div class="comments-item__maintext">
+                        Best on the market
+                     </div>
+                     <div class="comments-item__comment">
+                        I love this product because the support is great. Please Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, aspernatur?
+                     </div>
+                     <div class="comments-item__line"></div>
+                     <div class="comments-item__name">
+                        Worldtraveler
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="comments__button">
+               <button class="button">Write a review</button>
+            </div>
+         </div>
+      </div>
+      <div class="help">
+         <div class="help__container _container">
+            <div class="help__info">
+               <h2 class="help__info-maintext">
+                  Got a question? We are here to help
+               </h2>
+               <div class="help__info-text">
+                  If you don’t find an answer in our <a href="#">FAQ page</a>, please contact us below, our customer support is available Monday to Friday: 9am- 5pm.
+               </div>
+               <div class="help__info-elipses">
+                  <div class="info-elipses__item">
+                     <img src="../img/info/Ellipse 3.png">
+                     <img src="../img/info/Ellipse 4.png">
+                     <img src="../img/info/Ellipse 5.png">
+                     <img src="../img/info/Ellipse 6.png">
+                     <div class="elips-green"></div>
+                  </div>
+               </div>
+               <div class="help__info-buttonblock">
+                  <button class="button help__info-button">
+                     Contact us
+                  </button>
+                  <div class="help__info-buttoncomment">
+                     You’ll get a response within 24 hours
+                  </div>
+               </div>
+            </div>
+            <div class="help__photo">
+               <img src="../img/info/video-entry-product 1.png" class="help__photo-img">
+            </div>
+         </div>
+      </div>
+      <div class="bunner">
+         <div class="bunner__text">
+            Built for the real world.
+         </div>
+      </div>
+      <div class="like">
+         <div class="like__container _container">
+            <h2 class="like__maintext">You may also like</h2>
+            <div class="like__slider">
+               <div class="like__slider-item">
+                  <div class="like-item__photo">
+                     <img src="../img/like/Product Img.jpg" alt="">
+                  </div>
+                  <div class="like__slider-text">
+                     <div class="like-item__name">
+                        Canon EOS 90D
+                     </div>
+                     <div class="like-item__price">
+                        $699.99
+                     </div>
+                     <div class="like-item__buttonblock">
+                        <button class="button like-button">+ Quick Add</button>
+                        <div class="like-item__raiting">
+                           <div class="like__raiting-text">4.2</div>
+                           <div class="like__raiting-stars">
+                              <img src="../img/details/Reviews.svg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="like__slider-item">
+                  <div class="like-item__photo">
+                     <img src="../img/like/Product Img (1).jpg" alt="">
+                  </div>
+                  <div class="like__slider-text">
+                     <div class="like-item__name">
+                        Canon EOS 90D
+                     </div>
+                     <div class="like-item__price">
+                        $699.99
+                     </div>
+                     <div class="like-item__buttonblock">
+                        <button class="button like-button">+ Quick Add</button>
+                        <div class="like-item__raiting">
+                           <div class="like__raiting-text">4.2</div>
+                           <div class="like__raiting-stars">
+                              <img src="../img/details/Reviews.svg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="like__slider-item">
+                  <div class="like-item__photo">
+                     <img src="../img/like/Product Img (2).jpg" alt="">
+                  </div>
+                  <div class="like__slider-text">
+                     <div class="like-item__name">
+                        Canon EOS 90D
+                     </div>
+                     <div class="like-item__price">
+                        $699.99
+                     </div>
+                     <div class="like-item__buttonblock">
+                        <button class="button like-button">+ Quick Add</button>
+                        <div class="like-item__raiting">
+                           <div class="like__raiting-text">4.2</div>
+                           <div class="like__raiting-stars">
+                              <img src="../img/details/Reviews.svg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="like__slider-item">
+                  <div class="like-item__photo">
+                     <img src="../img/like/Product Img (3).jpg" alt="">
+                  </div>
+                  <div class="like__slider-text">
+                     <div class="like-item__name">
+                        Canon EOS 90D
+                     </div>
+                     <div class="like-item__price">
+                        $699.99
+                     </div>
+                     <div class="like-item__buttonblock">
+                        <button class="button like-button">+ Quick Add</button>
+                        <div class="like-item__raiting">
+                           <div class="like__raiting-text">4.2</div>
+                           <div class="like__raiting-stars">
+                              <img src="../img/details/Reviews.svg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="like__slider-item">
+                  <div class="like-item__photo">
+                     <img src="../img/like/Product Img.jpg" alt="">
+                  </div>
+                  <div class="like__slider-text">
+                     <div class="like-item__name">
+                        Canon EOS 90D
+                     </div>
+                     <div class="like-item__price">
+                        $699.99
+                     </div>
+                     <div class="like-item__buttonblock">
+                        <button class="button like-button">+ Quick Add</button>
+                        <div class="like-item__raiting">
+                           <div class="like__raiting-text">4.2</div>
+                           <div class="like__raiting-stars">
+                              <img src="../img/details/Reviews.svg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="like__slider-item">
+                  <div class="like-item__photo">
+                     <img src="../img/like/Product Img (1).jpg" alt="">
+                  </div>
+                  <div class="like__slider-text">
+                     <div class="like-item__name">
+                        Canon EOS 90D
+                     </div>
+                     <div class="like-item__price">
+                        $699.99
+                     </div>
+                     <div class="like-item__buttonblock">
+                        <button class="button like-button">+ Quick Add</button>
+                        <div class="like-item__raiting">
+                           <div class="like__raiting-text">4.2</div>
+                           <div class="like__raiting-stars">
+                              <img src="../img/details/Reviews.svg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="like__slider-item">
+                  <div class="like-item__photo">
+                     <img src="../img/like/Product Img (2).jpg" alt="">
+                  </div>
+                  <div class="like__slider-text">
+                     <div class="like-item__name">
+                        Canon EOS 90D
+                     </div>
+                     <div class="like-item__price">
+                        $699.99
+                     </div>
+                     <div class="like-item__buttonblock">
+                        <button class="button like-button">+ Quick Add</button>
+                        <div class="like-item__raiting">
+                           <div class="like__raiting-text">4.2</div>
+                           <div class="like__raiting-stars">
+                              <img src="../img/details/Reviews.svg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="like__slider-item">
+                  <div class="like-item__photo">
+                     <img src="../img/like/Product Img.jpg" alt="">
+                  </div>
+                  <div class="like__slider-text">
+                     <div class="like-item__name">
+                        Canon EOS 90D
+                     </div>
+                     <div class="like-item__price">
+                        $699.99
+                     </div>
+                     <div class="like-item__buttonblock">
+                        <button class="button like-button">+ Quick Add</button>
+                        <div class="like-item__raiting">
+                           <div class="like__raiting-text">4.2</div>
+                           <div class="like__raiting-stars">
+                              <img src="../img/details/Reviews.svg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="unleaching">
+         <div class="unleading__wrapper">
+            <div class="unleading__item">Unleashing the limitless possibilities of light</div>
+            <div class="unleading__item">Unleashing the limitless possibilities of light</div>
+            <div class="unleading__item">Unleashing the limitless possibilities of light</div>
+         </div>
+      </div>
+      <footer class="footer">
+         <div class="footer__continer _container">
+            <div class="footer__main">
+               <div class="footer__main-logo">
+                  <img src="../../img/footer/Lens.svg" alt="" class="footer-logo__img">
+                  <div class="footer-logo__text">Sid</div>
+               </div>
+               <div class="footer__main-secondtext">
+                  Sign up for news, updates & 10% off your first order.
+               </div>
+               <div class="footer__main-input">
+                  <input type="text" placeholder="Email">
+                  <a href="#" class="footer-input__search">
+                     <img src="../../img/footer/Input.svg" alt="">
+                     <img src="../../img/footer/Input2.svg" alt="">
+                  </a>
+               </div>
+               <div class="footer__main-messangers">
+                  <a href="#" class="footer-messagers__link">
+                     <img src="../../img/footer/Facebook.svg" alt="">
+                  </a>
+                  <a href="#" class="footer-messagers__link">
+                     <img src="../../img/footer/Twitter.svg" alt="">
+                  </a>
+                  <a href="#" class="footer-messagers__link">
+                     <img src="../../img/footer/IG.svg" alt="">
+                  </a>
+                  <a href="#" class="footer-messagers__link">
+                     <img src="../../img/footer/YT.svg" alt="">
+                  </a>
+               </div>
+            </div>
+            <div class="footer__menu">
+               <div class="footer__column">
+                  <div class="footer__column-text footer__column-name">Main Menu</div>
+                  <a href="#" class="footer__column-text">Shop</a>
+                  <a href="#" class="footer__column-text">About us</a>
+                  <a href="#" class="footer__column-text">Compare</a>
+                  <a href="#" class="footer__column-text">FAQs</a>
+                  <a href="#" class="footer__column-text">Contact</a>
+               </div>
+               <div class="footer__column">
+                  <div class="footer__column-text footer__column-name">Additional Information</div>
+                  <a href="#" class="footer__column-text">Search</a>
+                  <a href="#" class="footer__column-text">My Account</a>
+                  <a href="#" class="footer__column-text">Shipping</a>
+                  <a href="#" class="footer__column-text">Refund Policy</a>
+                  <a href="#" class="footer__column-text">Privacy Policy</a>
+               </div>
+               <div class="footer__column">
+                  <div class="footer__column-text footer__column-name">Extra</div>
+                  <a href="#" class="footer__column-text">Careers</a>
+                  <a href="#" class="footer__column-text">Press</a>
+                  <a href="#" class="footer__column-text">Story</a>
+               </div>
+            </div>
+            <div class="footer__lent">
+               <div class="footer__lent-rights">© 2022, Sid.</div>
+               <div class="footer__lent-pay">
+                  <a href="#" class="footer-pay__item">
+                     <img src="../../img/footer/Frame.svg" alt="">
+                  </a>
+                  <a href="#" class="footer-pay__item">
+                     <img src="../../img/footer/MasterCard.svg" alt="">
+                  </a>
+                  <a href="#" class="footer-pay__item">
+                     <img src="../../img/footer/Amex.svg" alt="">
+                  </a>
+                  <a href="#" class="footer-pay__item">
+                     <img src="../../img/footer/PayPal.svg" alt="">
+                  </a>
+                  <a href="#" class="footer-pay__item">
+                     <img src="../../img/footer/Diners.svg" alt="">
+                  </a>
+                  <a href="#" class="footer-pay__item">
+                     <img src="../../img/footer/Discover.svg" alt="">
+                  </a>
+               </div>
+            </div>
+         </div>
+      </footer>
+	</div>
+   <div id="bigSlider" class="big__slider">
+      <button id="returnButton" class="return"></button>
+      <div class="big__slider-continer">
+         <div class="big__slider-item">
+            <img src="img/Thumbnail1.png" alt="">
+         </div>
+         <div class="big__slider-item">
+            <img src="img/Thumbnail2.png" alt="">
+         </div>
+         <div class="big__slider-item">
+            <img src="img/Thumbnail3.png" alt="">
+         </div>
+         <div class="big__slider-item">
+            <img src="img/Thumbnail4.png" alt="">
+         </div>
+      </div>
+   </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="../../js/slick.min.js"></script>
+<script src="../js/products.js"></script>
+</html>
